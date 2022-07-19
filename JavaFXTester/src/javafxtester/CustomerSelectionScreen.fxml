@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxtester.SelectionController">
+   <children>
+      <Line endX="300.0" endY="-50.0" layoutX="300.0" layoutY="134.0" startX="-300.0" startY="-50.0" />
+      <TableView fx:id="tableView" layoutY="85.0" prefHeight="168.0" prefWidth="600.0">
+        <columns>
+          <TableColumn fx:id="BookNameColumn" prefWidth="304.0" text="Book Name" />
+          <TableColumn fx:id="BookPriceColumn" prefWidth="295.0" text="Price" />
+        </columns>
+      </TableView>
+      <Button layoutX="97.0" layoutY="279.0" mnemonicParsing="false" onAction="#buyButtonPushed" text="Buy" />
+      <Button layoutX="73.0" layoutY="329.0" mnemonicParsing="false" onAction="#buywithpointsButtonPushed" text="Buy with Points" />
+      <Button layoutX="464.0" layoutY="304.0" mnemonicParsing="false" onAction="#userlogout" text="Logout" />
+      <Text layoutX="47.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome:" />
+      <Label fx:id="CustomerName" layoutX="108.0" layoutY="44.0" prefHeight="17.0" prefWidth="29.0" />
+      <Text layoutX="193.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="You have:" />
+      <Label fx:id="CustomerPoints" layoutX="260.0" layoutY="45.0" />
+      <Text layoutX="300.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="points. Your status is:" wrappingWidth="126.607421875" />
+      <Label fx:id="CustomerStatus" layoutX="427.0" layoutY="47.0" />
+      <Button layoutX="274.0" layoutY="304.0" mnemonicParsing="false" onAction="#selectButtonPushed" text="Select" />
+      <TableView fx:id="Removed" layoutY="-184.0" prefHeight="168.0" prefWidth="600.0">
+         <columns>
+            <TableColumn fx:id="PurchasedNameColumn" prefWidth="304.0" text="Book Name" />
+            <TableColumn fx:id="PurchasedPriceColumn" prefWidth="295.0" text="Price" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
